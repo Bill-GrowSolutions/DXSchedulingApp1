@@ -30,9 +30,9 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            DevExpress.XtraScheduler.TimeRuler timeRuler4 = new DevExpress.XtraScheduler.TimeRuler();
-            DevExpress.XtraScheduler.TimeRuler timeRuler5 = new DevExpress.XtraScheduler.TimeRuler();
-            DevExpress.XtraScheduler.TimeRuler timeRuler6 = new DevExpress.XtraScheduler.TimeRuler();
+            DevExpress.XtraScheduler.TimeRuler timeRuler1 = new DevExpress.XtraScheduler.TimeRuler();
+            DevExpress.XtraScheduler.TimeRuler timeRuler2 = new DevExpress.XtraScheduler.TimeRuler();
+            DevExpress.XtraScheduler.TimeRuler timeRuler3 = new DevExpress.XtraScheduler.TimeRuler();
             this.splitContainerControl = new DevExpress.XtraEditors.SplitContainerControl();
             this.navBarControl = new DevExpress.XtraNavBar.NavBarControl();
             this.mailGroup = new DevExpress.XtraNavBar.NavBarGroup();
@@ -157,15 +157,16 @@
             // splitContainerControl
             // 
             this.splitContainerControl.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainerControl.Location = new System.Drawing.Point(0, 246);
+            this.splitContainerControl.Location = new System.Drawing.Point(0, 206);
+            this.splitContainerControl.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.splitContainerControl.Name = "splitContainerControl";
-            this.splitContainerControl.Padding = new System.Windows.Forms.Padding(6);
+            this.splitContainerControl.Padding = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.splitContainerControl.Panel1.Controls.Add(this.navBarControl);
             this.splitContainerControl.Panel1.Text = "Panel1";
             this.splitContainerControl.Panel2.Controls.Add(this.schedulerSplitContainerControl);
             this.splitContainerControl.Panel2.Text = "Panel2";
-            this.splitContainerControl.Size = new System.Drawing.Size(1731, 723);
-            this.splitContainerControl.SplitterPosition = 165;
+            this.splitContainerControl.Size = new System.Drawing.Size(1558, 592);
+            this.splitContainerControl.SplitterPosition = 148;
             this.splitContainerControl.TabIndex = 0;
             this.splitContainerControl.Text = "splitContainerControl1";
             // 
@@ -185,10 +186,11 @@
             this.tasksItem});
             this.navBarControl.LargeImages = this.navbarImageCollectionLarge;
             this.navBarControl.Location = new System.Drawing.Point(0, 0);
+            this.navBarControl.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.navBarControl.Name = "navBarControl";
-            this.navBarControl.OptionsNavPane.ExpandedWidth = 165;
+            this.navBarControl.OptionsNavPane.ExpandedWidth = 148;
             this.navBarControl.PaintStyleKind = DevExpress.XtraNavBar.NavBarViewKind.NavigationPane;
-            this.navBarControl.Size = new System.Drawing.Size(165, 711);
+            this.navBarControl.Size = new System.Drawing.Size(148, 582);
             this.navBarControl.SmallImages = this.navbarImageCollection;
             this.navBarControl.StoreDefaultPaintStyleName = true;
             this.navBarControl.TabIndex = 1;
@@ -275,13 +277,14 @@
             this.schedulerSplitContainerControl.Dock = System.Windows.Forms.DockStyle.Fill;
             this.schedulerSplitContainerControl.FixedPanel = DevExpress.XtraEditors.SplitFixedPanel.Panel2;
             this.schedulerSplitContainerControl.Location = new System.Drawing.Point(0, 0);
+            this.schedulerSplitContainerControl.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.schedulerSplitContainerControl.Name = "schedulerSplitContainerControl";
             this.schedulerSplitContainerControl.Panel1.Controls.Add(this.schedulerControl);
             this.schedulerSplitContainerControl.Panel1.Text = "Panel1";
             this.schedulerSplitContainerControl.Panel2.Controls.Add(this.dateNavigator);
             this.schedulerSplitContainerControl.Panel2.Text = "Panel2";
-            this.schedulerSplitContainerControl.Size = new System.Drawing.Size(1544, 711);
-            this.schedulerSplitContainerControl.SplitterPosition = 225;
+            this.schedulerSplitContainerControl.Size = new System.Drawing.Size(1393, 582);
+            this.schedulerSplitContainerControl.SplitterPosition = 202;
             this.schedulerSplitContainerControl.TabIndex = 2;
             this.schedulerSplitContainerControl.Text = "splitContainerControl1";
             // 
@@ -290,16 +293,18 @@
             this.schedulerControl.DataStorage = this.schedulerStorage;
             this.schedulerControl.Dock = System.Windows.Forms.DockStyle.Fill;
             this.schedulerControl.Location = new System.Drawing.Point(0, 0);
+            this.schedulerControl.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.schedulerControl.Name = "schedulerControl";
-            this.schedulerControl.Size = new System.Drawing.Size(1309, 711);
+            this.schedulerControl.Size = new System.Drawing.Size(1184, 582);
             this.schedulerControl.Start = new System.DateTime(2018, 12, 7, 0, 0, 0, 0);
             this.schedulerControl.TabIndex = 0;
             this.schedulerControl.Text = "schedulerControl1";
-            this.schedulerControl.Views.DayView.TimeRulers.Add(timeRuler4);
+            this.schedulerControl.Views.DayView.TimeRulers.Add(timeRuler1);
             this.schedulerControl.Views.FullWeekView.Enabled = true;
-            this.schedulerControl.Views.FullWeekView.TimeRulers.Add(timeRuler5);
+            this.schedulerControl.Views.FullWeekView.TimeRulers.Add(timeRuler2);
+            this.schedulerControl.Views.GanttView.Enabled = false;
             this.schedulerControl.Views.WeekView.Enabled = false;
-            this.schedulerControl.Views.WorkWeekView.TimeRulers.Add(timeRuler6);
+            this.schedulerControl.Views.WorkWeekView.TimeRulers.Add(timeRuler3);
             this.schedulerControl.EditAppointmentFormShowing += new DevExpress.XtraScheduler.AppointmentFormEventHandler(this.schedulerControl_EditAppointmentFormShowing);
             // 
             // dateNavigator
@@ -311,9 +316,10 @@
             this.dateNavigator.EditValue = new System.DateTime(2018, 12, 7, 0, 0, 0, 0);
             this.dateNavigator.FirstDayOfWeek = System.DayOfWeek.Monday;
             this.dateNavigator.Location = new System.Drawing.Point(0, 0);
+            this.dateNavigator.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dateNavigator.Name = "dateNavigator";
             this.dateNavigator.SchedulerControl = this.schedulerControl;
-            this.dateNavigator.Size = new System.Drawing.Size(225, 711);
+            this.dateNavigator.Size = new System.Drawing.Size(202, 582);
             this.dateNavigator.TabIndex = 1;
             // 
             // ribbonControl
@@ -373,6 +379,7 @@
             this.printPageSetupItem1});
             this.ribbonControl.LargeImages = this.ribbonImageCollectionLarge;
             this.ribbonControl.Location = new System.Drawing.Point(0, 0);
+            this.ribbonControl.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ribbonControl.MaxItemId = 103;
             this.ribbonControl.Name = "ribbonControl";
             this.ribbonControl.PageCategories.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageCategory[] {
@@ -389,7 +396,7 @@
             this.repositoryItemDuration1,
             this.repositoryItemSpinEdit1});
             this.ribbonControl.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.Office2019;
-            this.ribbonControl.Size = new System.Drawing.Size(1731, 246);
+            this.ribbonControl.Size = new System.Drawing.Size(1558, 206);
             this.ribbonControl.StatusBar = this.ribbonStatusBar;
             // 
             // appMenu
@@ -407,22 +414,24 @@
             this.popupControlContainer2.Appearance.Options.UseBackColor = true;
             this.popupControlContainer2.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.popupControlContainer2.Controls.Add(this.buttonEdit);
-            this.popupControlContainer2.Location = new System.Drawing.Point(238, 289);
+            this.popupControlContainer2.Location = new System.Drawing.Point(214, 239);
+            this.popupControlContainer2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.popupControlContainer2.Name = "popupControlContainer2";
             this.popupControlContainer2.Ribbon = this.ribbonControl;
-            this.popupControlContainer2.Size = new System.Drawing.Size(118, 28);
+            this.popupControlContainer2.Size = new System.Drawing.Size(106, 23);
             this.popupControlContainer2.TabIndex = 3;
             this.popupControlContainer2.Visible = false;
             // 
             // buttonEdit
             // 
             this.buttonEdit.EditValue = "Some Text";
-            this.buttonEdit.Location = new System.Drawing.Point(3, 5);
+            this.buttonEdit.Location = new System.Drawing.Point(3, 4);
+            this.buttonEdit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonEdit.MenuManager = this.ribbonControl;
             this.buttonEdit.Name = "buttonEdit";
             this.buttonEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton()});
-            this.buttonEdit.Size = new System.Drawing.Size(100, 36);
+            this.buttonEdit.Size = new System.Drawing.Size(90, 28);
             this.buttonEdit.TabIndex = 0;
             // 
             // iExit
@@ -442,26 +451,29 @@
             this.popupControlContainer1.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.popupControlContainer1.Controls.Add(this.someLabelControl2);
             this.popupControlContainer1.Controls.Add(this.someLabelControl1);
-            this.popupControlContainer1.Location = new System.Drawing.Point(111, 197);
+            this.popupControlContainer1.Location = new System.Drawing.Point(100, 163);
+            this.popupControlContainer1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.popupControlContainer1.Name = "popupControlContainer1";
             this.popupControlContainer1.Ribbon = this.ribbonControl;
-            this.popupControlContainer1.Size = new System.Drawing.Size(76, 70);
+            this.popupControlContainer1.Size = new System.Drawing.Size(68, 58);
             this.popupControlContainer1.TabIndex = 2;
             this.popupControlContainer1.Visible = false;
             // 
             // someLabelControl2
             // 
-            this.someLabelControl2.Location = new System.Drawing.Point(3, 57);
+            this.someLabelControl2.Location = new System.Drawing.Point(3, 47);
+            this.someLabelControl2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.someLabelControl2.Name = "someLabelControl2";
-            this.someLabelControl2.Size = new System.Drawing.Size(87, 23);
+            this.someLabelControl2.Size = new System.Drawing.Size(74, 19);
             this.someLabelControl2.TabIndex = 0;
             this.someLabelControl2.Text = "Some Info";
             // 
             // someLabelControl1
             // 
-            this.someLabelControl1.Location = new System.Drawing.Point(3, 3);
+            this.someLabelControl1.Location = new System.Drawing.Point(3, 2);
+            this.someLabelControl1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.someLabelControl1.Name = "someLabelControl1";
-            this.someLabelControl1.Size = new System.Drawing.Size(87, 23);
+            this.someLabelControl1.Size = new System.Drawing.Size(74, 19);
             this.someLabelControl1.TabIndex = 0;
             this.someLabelControl1.Text = "Some Info";
             // 
@@ -782,6 +794,7 @@
             this.calendarToolsRibbonPageCategory1.Name = "calendarToolsRibbonPageCategory1";
             this.calendarToolsRibbonPageCategory1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.appointmentRibbonPage1});
+            this.calendarToolsRibbonPageCategory1.Visible = false;
             // 
             // appointmentRibbonPage1
             // 
@@ -936,10 +949,11 @@
             // 
             this.ribbonStatusBar.ItemLinks.Add(this.siStatus);
             this.ribbonStatusBar.ItemLinks.Add(this.siInfo);
-            this.ribbonStatusBar.Location = new System.Drawing.Point(0, 969);
+            this.ribbonStatusBar.Location = new System.Drawing.Point(0, 798);
+            this.ribbonStatusBar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ribbonStatusBar.Name = "ribbonStatusBar";
             this.ribbonStatusBar.Ribbon = this.ribbonControl;
-            this.ribbonStatusBar.Size = new System.Drawing.Size(1731, 47);
+            this.ribbonStatusBar.Size = new System.Drawing.Size(1558, 41);
             // 
             // schedulerBarController1
             // 
@@ -989,14 +1003,15 @@
             // Form1
             // 
             this.AllowFormGlass = DevExpress.Utils.DefaultBoolean.True;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 23F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1731, 1016);
+            this.ClientSize = new System.Drawing.Size(1558, 839);
             this.Controls.Add(this.splitContainerControl);
             this.Controls.Add(this.popupControlContainer1);
             this.Controls.Add(this.popupControlContainer2);
             this.Controls.Add(this.ribbonStatusBar);
             this.Controls.Add(this.ribbonControl);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form1";
             this.Ribbon = this.ribbonControl;
             this.StatusBar = this.ribbonStatusBar;
