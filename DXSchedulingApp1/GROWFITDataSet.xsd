@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="GROWFITDataSet" targetNamespace="http://tempuri.org/GROWFITDataSet.xsd" xmlns:mstns="http://tempuri.org/GROWFITDataSet.xsd" xmlns="http://tempuri.org/GROWFITDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="GROWFITConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="GROWFITConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.DXSchedulingApp1.Properties.Settings.GlobalReference.Default.GROWFITConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ViewDeliveryPlanLineTableAdapter" GeneratorDataComponentClassName="ViewDeliveryPlanLineTableAdapter" Name="ViewDeliveryPlanLine" UserDataComponentName="ViewDeliveryPlanLineTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="GROWFITConnectionString (Settings)" DbObjectName="GROWFIT.dbo.ViewDeliveryPlanLine" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT ViewDeliveryPlanLine.*
+FROM   ViewDeliveryPlanLine</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="DESCRIPTION" DataSetColumn="DESCRIPTION" />
+              <Mapping SourceColumn="SUPPLIERNAME" DataSetColumn="SUPPLIERNAME" />
+              <Mapping SourceColumn="PRODUCT" DataSetColumn="PRODUCT" />
+              <Mapping SourceColumn="SOURCENAME" DataSetColumn="SOURCENAME" />
+              <Mapping SourceColumn="DISTANCE" DataSetColumn="DISTANCE" />
+              <Mapping SourceColumn="QTYINITIAL" DataSetColumn="QTYINITIAL" />
+              <Mapping SourceColumn="QTYDELIVERED" DataSetColumn="QTYDELIVERED" />
+              <Mapping SourceColumn="QTYAVAILABLE" DataSetColumn="QTYAVAILABLE" />
+              <Mapping SourceColumn="QTYASSIGNED" DataSetColumn="QTYASSIGNED" />
+              <Mapping SourceColumn="PAYLOAD" DataSetColumn="PAYLOAD" />
+              <Mapping SourceColumn="SLOTSAVAILABLE" DataSetColumn="SLOTSAVAILABLE" />
+              <Mapping SourceColumn="SLOTSASSIGNED" DataSetColumn="SLOTSASSIGNED" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="GROWFITDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="GROWFITDataSet" msprop:Generator_UserDSName="GROWFITDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ViewDeliveryPlanLine" msprop:Generator_TableClassName="ViewDeliveryPlanLineDataTable" msprop:Generator_TableVarName="tableViewDeliveryPlanLine" msprop:Generator_RowChangedName="ViewDeliveryPlanLineRowChanged" msprop:Generator_TablePropName="ViewDeliveryPlanLine" msprop:Generator_RowDeletingName="ViewDeliveryPlanLineRowDeleting" msprop:Generator_RowChangingName="ViewDeliveryPlanLineRowChanging" msprop:Generator_RowEvHandlerName="ViewDeliveryPlanLineRowChangeEventHandler" msprop:Generator_RowDeletedName="ViewDeliveryPlanLineRowDeleted" msprop:Generator_RowClassName="ViewDeliveryPlanLineRow" msprop:Generator_UserTableName="ViewDeliveryPlanLine" msprop:Generator_RowEvArgName="ViewDeliveryPlanLineRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="DESCRIPTION" msprop:Generator_ColumnVarNameInTable="columnDESCRIPTION" msprop:Generator_ColumnPropNameInRow="DESCRIPTION" msprop:Generator_ColumnPropNameInTable="DESCRIPTIONColumn" msprop:Generator_UserColumnName="DESCRIPTION" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SUPPLIERNAME" msprop:Generator_ColumnVarNameInTable="columnSUPPLIERNAME" msprop:Generator_ColumnPropNameInRow="SUPPLIERNAME" msprop:Generator_ColumnPropNameInTable="SUPPLIERNAMEColumn" msprop:Generator_UserColumnName="SUPPLIERNAME">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PRODUCT" msprop:Generator_ColumnVarNameInTable="columnPRODUCT" msprop:Generator_ColumnPropNameInRow="PRODUCT" msprop:Generator_ColumnPropNameInTable="PRODUCTColumn" msprop:Generator_UserColumnName="PRODUCT">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SOURCENAME" msprop:Generator_ColumnVarNameInTable="columnSOURCENAME" msprop:Generator_ColumnPropNameInRow="SOURCENAME" msprop:Generator_ColumnPropNameInTable="SOURCENAMEColumn" msprop:Generator_UserColumnName="SOURCENAME">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="45" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DISTANCE" msprop:Generator_ColumnVarNameInTable="columnDISTANCE" msprop:Generator_ColumnPropNameInRow="DISTANCE" msprop:Generator_ColumnPropNameInTable="DISTANCEColumn" msprop:Generator_UserColumnName="DISTANCE" type="xs:decimal" />
+              <xs:element name="QTYINITIAL" msprop:Generator_ColumnVarNameInTable="columnQTYINITIAL" msprop:Generator_ColumnPropNameInRow="QTYINITIAL" msprop:Generator_ColumnPropNameInTable="QTYINITIALColumn" msprop:Generator_UserColumnName="QTYINITIAL" type="xs:decimal" minOccurs="0" />
+              <xs:element name="QTYDELIVERED" msprop:Generator_ColumnVarNameInTable="columnQTYDELIVERED" msprop:Generator_ColumnPropNameInRow="QTYDELIVERED" msprop:Generator_ColumnPropNameInTable="QTYDELIVEREDColumn" msprop:Generator_UserColumnName="QTYDELIVERED" type="xs:decimal" minOccurs="0" />
+              <xs:element name="QTYAVAILABLE" msprop:Generator_ColumnVarNameInTable="columnQTYAVAILABLE" msprop:Generator_ColumnPropNameInRow="QTYAVAILABLE" msprop:Generator_ColumnPropNameInTable="QTYAVAILABLEColumn" msprop:Generator_UserColumnName="QTYAVAILABLE" type="xs:decimal" minOccurs="0" />
+              <xs:element name="QTYASSIGNED" msprop:Generator_ColumnVarNameInTable="columnQTYASSIGNED" msprop:Generator_ColumnPropNameInRow="QTYASSIGNED" msprop:Generator_ColumnPropNameInTable="QTYASSIGNEDColumn" msprop:Generator_UserColumnName="QTYASSIGNED" type="xs:decimal" minOccurs="0" />
+              <xs:element name="PAYLOAD" msprop:Generator_ColumnVarNameInTable="columnPAYLOAD" msprop:Generator_ColumnPropNameInRow="PAYLOAD" msprop:Generator_ColumnPropNameInTable="PAYLOADColumn" msprop:Generator_UserColumnName="PAYLOAD" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SLOTSAVAILABLE" msprop:Generator_ColumnVarNameInTable="columnSLOTSAVAILABLE" msprop:Generator_ColumnPropNameInRow="SLOTSAVAILABLE" msprop:Generator_ColumnPropNameInTable="SLOTSAVAILABLEColumn" msprop:Generator_UserColumnName="SLOTSAVAILABLE" type="xs:int" minOccurs="0" />
+              <xs:element name="SLOTSASSIGNED" msprop:Generator_ColumnVarNameInTable="columnSLOTSASSIGNED" msprop:Generator_ColumnPropNameInRow="SLOTSASSIGNED" msprop:Generator_ColumnPropNameInTable="SLOTSASSIGNEDColumn" msprop:Generator_UserColumnName="SLOTSASSIGNED" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
